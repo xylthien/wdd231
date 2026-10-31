@@ -1,29 +1,32 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 38rem) {    
+    header, main, footer {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
-header, main, nav, footer {
-    max-width: 900px;
-    margin: 0 auto;
-}
+    .navigation {
+        display: block;
+        max-width: 984px;
+        margin: 0 auto;
+    }
 
-header {
-    grid-template-columns: 24px auto;
-}
+    header {
+        grid-template-columns: 24px auto;
+    }
 
-.hamburger {
-    display: none;
-}
+    .hamburger {
+        display: none;
+    }
 
-.navigation {
-    display: block;
-    border-bottom: solid 1px #ddd;
-}
+    .navigation ul {
+        display: flex;
+    }
 
-.navigation ul {
-    display: flex;
-}
+    .about {
+        grid-template-columns: 2fr 1fr;
+    }
 
-.navigation a {
-    border: none;
-}
-
+    #course-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

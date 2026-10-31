@@ -3,39 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 231 | Index Page</title>
+    <meta name="description" content="Landing page for WDD 231 course-long assignment">
+    <meta name="author" content="Devin Hale">
+    
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
-        <span>Devin's Site Title</span>
-        <button id="ham-btn" class="hamburger"></button>
+        <img src="images/coin.svg" alt="Site Logo" width="512" height="512">
+        <span>Devin Hale</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation" aria-expanded="false"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">News &amp; Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <div class="about">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! My name is Devin Hale, and I'm currently studying web development. Outside of school, I enjoy programming,
+                playing video games, and participating in Dungeons & Dragons. I particularly enjoy the creativity and problem-solving
+                that come with both programming and tabletop gaming. I'm looking forward to expanding my skills and learning more about
+                web development throughout this course.</p>
+            </div>
+            <div class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/devin-hale.jpg" alt="Portrait of Devin Hale" class="selfie">
+            </div>
+        </div>
+
+        <div class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+
+            <div id="course-list">
+
+            </div>
+
+            <p id="total-credits"></p>
+        </div>
     </main>
     <footer>
         <div class="social">
-            <a href="https://discord.com/" target="_blank"><img src="images/discord.svg" alt="Discord" width="16" height="16"></a>
-            <a href="https://github.com/xylthien/" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/in/devin-hale-5644171a1/" target="_blank"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
-            <a href="https://www.instagram.com/xylthien456/" target="_blank"><img src="images/instagram.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://github.com/xylthien/" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/devin-hale-5644171a1/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linked In" width="16" height="16"></a>
+            <a href="https://www.instagram.com/xylthien456/" target="_blank"><img src="images/instagram.svg" alt="Instagram"
+                    width="16" height="16"></a>
         </div>
-
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
+        
+        <p>&copy; <span id="currentYear"></span> | Devin Hale | Utah, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
 </body>
 </html>
