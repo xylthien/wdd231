@@ -1,0 +1,34 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    padding: 1rem;
+    background-color: white;
+}
+
+#cards > section {
+    border: 1px solid #ccc;
+    background-color: lightblue;
+    padding: 1rem;
+    text-align: center;
+}
+
+#cards h2 {
+    margin: 0.5rem 0 1rem;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
