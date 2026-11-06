@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Sandy Chamber of Commerce</title>
+    <meta name="author" content="Devin Hale">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+
+    <meta property="og:title" content="Sandy Chamber of Commerce Directory">
+    <meta property="og:description" content="Sandy Utah's Chamber of Commerce Directory">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="Site Logo" width="44" height="44">
+        <span>Chamber of Commerce | Sandy, Utah</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation" aria-expanded="false"></button>
+    
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#" aria-current="page">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Directory</h1>
+        <div class="view-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <div id="business-directory"></div>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/xylthien/" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/devin-hale-5644171a1/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Linked In" width="16" height="16"></a>
+            <a href="https://www.instagram.com/xylthien456/" target="_blank"><img src="images/instagram.svg" alt="Instagram"
+                    width="16" height="16"></a>
+        </div>
+    
+        <p>&copy; <span id="currentYear"></span> | Devin Hale | Utah, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

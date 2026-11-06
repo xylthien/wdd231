@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Copper Ridge Creative",
+    "address": "1842 Juniper Avenue, Sandy, UT 84070",
+    "phone": "801-555-0142",
+    "website": "https://copperridgecreative.example",
+    "image": "copper-ridge-creative.jpg",
+    "membershipLevel": 3,
+    "description": "A locally focused design studio offering branding, website design, and print services.",
+    "email": "example@copper-ridge-creative.com"
+  },
+  {
+    "name": "Wasatch Trail Outfitters",
+    "address": "725 Canyon Road, Sandy, UT 84092",
+    "phone": "801-555-0187",
+    "website": "https://wasatchtrailoutfitters.example",
+    "image": "wasatch-trail-outfitters.jpg",
+    "membershipLevel": 2,
+    "description": "Outdoor gear, trail essentials, and practical advice for weekend adventurers.",
+    "email": "example@wasatch-trail-outfitters.com"
+  },
+  {
+    "name": "Bluebird Family Dental",
+    "address": "310 Maple Street, Sandy, UT 84070",
+    "phone": "801-555-0126",
+    "website": "https://bluebirdfamilydental.example",
+    "image": "bluebird-family-dental.jpg",
+    "membershipLevel": 2,
+    "description": "A family dental practice offering preventive care and general dentistry.",
+    "email": "example@bluebird-family-dental.com"
+  },
+  {
+    "name": "Pioneer Bean Coffee",
+    "address": "96 Center Street, Sandy, UT 84070",
+    "phone": "801-555-0163",
+    "website": "https://pioneerbeancoffee.example",
+    "image": "pioneer-bean-coffee.jpg",
+    "membershipLevel": 1,
+    "description": "A neighborhood coffee shop serving espresso drinks, tea, and fresh pastries.",
+    "email": "example@pioneer-bean-coffee.com"
+  },
+  {
+    "name": "Silverline Auto Care",
+    "address": "1420 Westgate Drive, Sandy, UT 84070",
+    "phone": "801-555-0194",
+    "website": "https://silverlineautocare.example",
+    "image": "silverline-auto.jpg",
+    "membershipLevel": 1,
+    "description": "Automotive maintenance and repair for cars, trucks, and family vehicles.",
+    "email": "example@silverline-auto-care.com"
+  },
+  {
+    "name": "Evergreen Garden Supply",
+    "address": "508 Orchard Lane, Sandy, UT 84092",
+    "phone": "801-555-0171",
+    "website": "https://evergreengardensupply.example",
+    "image": "evergreen-garden.jpg",
+    "membershipLevel": 3,
+    "description": "Plants, gardening tools, soil, and seasonal supplies for home gardeners.",
+    "email": "example@evergreen-garden-supply.com"
+  },
+  {
+    "name": "Summit Peak Accounting",
+    "address": "2200 Mountain View Parkway, Sandy, UT 84093",
+    "phone": "801-555-0138",
+    "website": "https://summitpeakaccounting.example",
+    "image": "summit-peak-accounting.jpg",
+    "membershipLevel": 1,
+    "description": "Bookkeeping, tax preparation, and small-business accounting services.",
+    "email": "example@summit-peak-accounting.com"
+  }
+]

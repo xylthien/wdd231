@@ -1,0 +1,29 @@
+@media only screen and (min-width : 38rem) {
+    header {
+        grid-template-columns: 44px auto 1fr;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: auto;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #business-directory {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    #business-directory {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
