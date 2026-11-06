@@ -200,3 +200,55 @@ header span {
 .gold {
     color: var(--gold);
 }
+
+/*********** FOOTER ***********/
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+footer h2 {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+}
+
+.social img {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
