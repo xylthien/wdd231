@@ -1,6 +1,17 @@
 const directory = document.querySelector("#business-directory");
 const memberFile = 'data/members.json';
 
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+gridButton.addEventListener("click", () => {
+    directory.classList.remove("list-view");
+});
+
+listButton.addEventListener("click", () => {
+    directory.classList.add("list-view");
+})
+
 async function getMemberData() {
     try {
         const response = await fetch(memberFile);
