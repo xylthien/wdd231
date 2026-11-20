@@ -101,6 +101,7 @@ function forecastResults(data) {
         });
         cardDescription.textContent = day.description;
         cardHigh.innerHTML = `${Math.round(high)}&deg;F`;
+        cardHigh.classList.add("forecast-temp");
 
         image.setAttribute('src', `https://openweathermap.org/img/wn/${day.icon}@2x.png`);
         image.setAttribute('alt', day.description)

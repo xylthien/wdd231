@@ -16,9 +16,9 @@
     --accent-color: #A66B45;
 
     /* Membership  Colors */
-    --copper: #B87333;
-    --silver: #A8A8A8;
-    --gold: #D4A017;
+    --copper: #8A4B1F;
+    --silver: #6B6B6B;
+    --gold: #806000;
 }
 
 /*********** UNIVERSAL ***********/
@@ -169,7 +169,7 @@ main > section {
 
 /*********** EVENTS ***********/
 #current-events section {
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 1rem;
     margin: .5rem;
@@ -177,6 +177,31 @@ main > section {
 }
 
 /*********** WEATHER ***********/
+#current-weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+#current-weather p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#current-weather figure {
+    margin: 0;
+    text-align: center;
+}
+
+#current-weather img {
+    filter: drop-shadow(1px 1px 1px #373737);
+}
+
 #forecast {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -193,8 +218,31 @@ main > section {
     border-radius: 8px;
 }
 
+.forecast-card h3 {
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1rem;
+}
+
 .forecast-card img {
     filter: drop-shadow(1px 1px 1px #373737);
+}
+
+.forecast-temp {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0.5rem 0 0;
+}
+
+/*********** SPOTLIGHTS ***********/
+#spotlights section {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--card-background);
 }
 
 /*********** VIEW BUTTONS ***********/
