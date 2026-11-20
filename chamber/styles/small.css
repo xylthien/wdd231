@@ -122,6 +122,32 @@ header span {
     font-weight: 700;
 }
 
+/*********** HERO ***********/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 60%);
+    color: white;
+    padding: 1rem;
+    max-width: 90%;
+    text-align: center;
+}
+
+.hero-content h2 {
+    color: inherit;
+}
+
 /*********** HOME ***********/
 main > section {
     border-bottom: 1px solid var(--primary-color);
