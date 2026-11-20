@@ -54,13 +54,13 @@ function displaySpolights(data) {
         phone.textContent = member.phone;
         address.textContent = member.address;
         website.textContent = member.website;
-        membershipLevel.textContent = `${crown}`;
+        membershipLevel.textContent = ` ${crown}`;
 
         card.appendChild(name);
         card.appendChild(phone);
         card.appendChild(address);
         card.appendChild(website);
-        card.appendChild(membershipLevel);
+        name.appendChild(membershipLevel);
 
         spotlights.appendChild(card);
 
