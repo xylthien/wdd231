@@ -21,6 +21,20 @@
     --gold: #806000;
 }
 
+/*********** KEYFRAMES ***********/
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
 /*********** UNIVERSAL ***********/
 
 * {
@@ -258,6 +272,31 @@ main > section {
     padding: 1rem;
     margin: .5rem;
     background-color: var(--card-background);
+    animation: floatIn 0.8s ease-out;
+    animation-delay: calc(var(--order) * 0.2s);
+    animation-fill-mode: backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .levels {
+        animation: none;
+    }
+}
+
+.levels:nth-child(1) {
+    --order: 0;
+}
+
+.levels:nth-child(2) {
+    --order: 1;
+}
+
+.levels:nth-child(3) {
+    --order: 2;
+}
+
+.levels:nth-child(4) {
+    --order: 3;
 }
 
 /*********** FORM ***********/

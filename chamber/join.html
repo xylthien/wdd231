@@ -47,82 +47,112 @@
         <div id="joinUs">
             <form class="join" method="get" action="thankyou.html">
                 <div>
-                    <label for="firstName">First Name</label>
-                    <input 
-                    name="firstName" 
-                    id="firstName" 
-                    type="text" 
-                    autocomplete="given-name" 
-                    required>
+                    <label>
+                        First Name
+                        <input 
+                        name="firstName" 
+                        id="firstName" 
+                        type="text" 
+                        title="Enter your first name."
+                        autocomplete="given-name" 
+                        required>
+                    </label>
                 </div>
                 <div>
-                    <label for="lastName">Last Name</label>
-                    <input 
-                    name="lastName" 
-                    id="lastName" 
-                    type="text" 
-                    autocomplete="family-name" 
-                    required>
+                    <label>
+                        Last Name
+                        <input 
+                        name="lastName" 
+                        id="lastName" 
+                        type="text" 
+                        title="Enter your last name."
+                        autocomplete="family-name" 
+                        required>
+                    </label>
                 </div>
                 <div>
-                    <label for="orgTitle">Organizational Title</label>
-                    <input 
-                    name="orgTitle" 
-                    id="orgTitle" 
-                    type="text" 
-                    pattern="[A-Za-z -]{7,}"
-                    required>
+                    <label>
+                        Organizational Title
+                        <input 
+                        name="orgTitle" 
+                        id="orgTitle"
+                        autocomplete="organization-title"
+                        title="Enter your title. Minimum 7 characters. Only letters, spaces, or hyphens." 
+                        type="text" 
+                        pattern="[A-Za-z -]{7,}"
+                        required>
+                    </label>
                 </div>
                 <div>
-                    <label for="email">Email</label>
-                    <input 
-                    name="email" 
-                    id="email" 
-                    type="email" 
-                    autocomplete="email" 
-                    placeholder="you@example.org" 
-                    required>
+                    <label>
+                        Email
+                        <input 
+                        name="email" 
+                        id="email" 
+                        type="email" 
+                        title="Enter your email."
+                        autocomplete="email" 
+                        placeholder="you@example.org" 
+                        required>
+                    </label>
                 </div>
                 <div>
-                    <label for="phone">Phone Number</label>
-                    <input 
-                    name="phone" 
-                    id="phone" 
-                    type="tel" 
-                    autocomplete="tel" 
-                    placeholder="555-123-4567" 
-                    pattern="[0-9+\-\s()]+" 
-                    required>
+                    <label>
+                        Phone Number
+                        <input 
+                        name="phone" 
+                        id="phone" 
+                        type="tel" 
+                        autocomplete="tel" 
+                        title="Enter your phone number. Only digits, plus signs, hyphens, spaces, and parentheses allowed."
+                        placeholder="555-123-4567" 
+                        pattern="[0-9+\-\s()]+" 
+                        required>
+                    </label>
                 </div>
                 <div>
-                    <label for="organization">Organization Name</label>
-                    <input 
-                    name="organization" 
-                    id="organization" 
-                    type="text" 
-                    required>
+                    <label>
+                        Organization Name
+                        <input 
+                        name="organization" 
+                        id="organization" 
+                        autocomplete="organization"
+                        title="Enter the name of your organization."
+                        type="text" 
+                        required>
+                    </label>
                 </div>
                 <div>
-                    <label for="membershipLevel">Membership Level</label>
-                    <select name="level" id="membershipLevel" required>
-                        <option value="" disabled selected>-- Select an option --</option>
-                        <option value="gold">Gold</option>
-                        <option value="silver">Silver</option>
-                        <option value="bronze">Bronze</option>
-                        <option value="NP">Non-Profit</option>
-                    </select>
+                    <label>
+                        Membership Level
+                        <select 
+                        name="level" 
+                        id="membershipLevel" 
+                        title="Select your preferred membership level. Review the membership cards for details about each level."
+                        required>
+                            <option value="" disabled selected>-- Select an option --</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="np">Non-Profit</option>
+                        </select>
+                    </label>
                 </div>
                 <div>
-                    <label for="orgDescription">Organization Description</label>
-                    <textarea 
-                    name="orgDescription" 
-                    id="orgDescription" 
-                    required 
-                    placeholder="Please tell us about your organization"
-                    rows="6"
-                    minlength="20"
-                    maxlength="500"></textarea>
+                    <label>
+                        Organization Description
+                        <textarea 
+                        name="orgDescription" 
+                        id="orgDescription" 
+                        required 
+                        placeholder="Please tell us about your organization"
+                        title="Please provide a description of your organization."
+                        rows="6"
+                        minlength="20"
+                        maxlength="500"></textarea>
+                    </label>
                 </div>
+                <input type="hidden" name="timestamp" id="timestamp">
 
                 <input type="submit" value="Complete Application">
             </form>

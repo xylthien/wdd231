@@ -31,3 +31,9 @@ function closeDialog(event) {
 closeButtons.forEach(button=> {
     button.addEventListener("click", closeDialog);
 });
+
+
+const timestamp = new Date();
+const timestampField = document.querySelector("#timestamp");
+
+timestampField.value = timestamp.toISOString();
