@@ -1,6 +1,11 @@
 const courseList = document.querySelector("#course-list");
 const totalCreditsDisplay = document.querySelector("#total-credits");
 
+const courseDetails = document.querySelector("#course-details");
+const courseTitle = document.querySelector("#course-title");
+const courseDescription = document.querySelector("#course-description");
+const closeDialog = document.querySelector("#close-dialog");
+
 function displayCourses(courseArray) {
     courseList.innerHTML = "";
 
@@ -19,6 +24,17 @@ function displayCourses(courseArray) {
             <h3>${course.subject} ${course.number}</h3>
             <p>${course.title}</p>
         `;
+
+        card.addEventListener("click", () => {
+            courseTitle.textContent = `${course.subject} ${course.number}`;
+            courseDescription.textContent = course.description;
+            courseDetails.showModal();
+        });
+
+        closeDialog.addEventListener("click", () => {
+            courseDetails.close();
+        });
+
         courseList.appendChild(card);
     });
 }
@@ -134,3 +150,6 @@ document.querySelector("#cse-courses").addEventListener("click", () => {
     setActiveButton(cseButton);
     displayCourses(cseCourses);
 });
+
+
+

@@ -1,3 +1,26 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #263D35;
+    --secondary-color: #D9C3A0;
+
+    /* Background Colors */
+    --background-color: #F4EFE5;
+    --card-background: #FFFFFF;
+
+    /* Text Colors */
+    --text-color: #373737;
+    --heading-color: #263D35;
+
+    /* Borders and Accents */
+    --border-color: #D9C3A0;
+    --accent-color: #A66B45;
+
+    /* Membership  Colors */
+    --copper: #8A4B1F;
+    --silver: #6B6B6B;
+    --gold: #806000;
+}
+
 @media only screen and (min-width : 38rem) {
     header {
         grid-template-columns: 44px auto 1fr;
@@ -19,6 +42,15 @@
     
     #business-directory {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #joinUs {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .join {
+        border-right: 1px solid var(--border-color);
     }
 }
 

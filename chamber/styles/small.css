@@ -123,6 +123,7 @@ header span {
 }
 
 /*********** HERO ***********/
+
 .hero {
     position: relative;
     height: 300px;
@@ -163,11 +164,13 @@ header span {
 }
 
 /*********** HOME ***********/
+
 main > section {
     border-bottom: 1px solid var(--primary-color);
 }
 
 /*********** EVENTS ***********/
+
 #current-events section {
     border: 1px solid var(--border-color);
     border-radius: 6px;
@@ -177,6 +180,7 @@ main > section {
 }
 
 /*********** WEATHER ***********/
+
 #current-weather {
     display: flex;
     justify-content: center;
@@ -237,12 +241,71 @@ main > section {
 }
 
 /*********** SPOTLIGHTS ***********/
+
 #spotlights section {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 1rem;
     margin: .5rem;
     background-color: var(--card-background);
+}
+
+/*********** JOIN US ***********/
+
+.levels {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--card-background);
+}
+
+/*********** FORM ***********/
+
+.join {
+    padding: 1rem;
+    margin: .75rem 0;
+}
+
+.join div {
+    margin-bottom: 1rem;
+}
+
+.join > div > label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.join input {
+    padding-left: 10px;
+}
+
+.join input[value] {
+    color: gray;
+}
+
+.join label:has(+ input[required])::after,
+.join label:has(+ select[required])::after { /* Thank you Google! */
+    content: " *";
+    color: red;
+    font-weight: bold;
+}
+
+.join input[type="text"],
+.join input[type="tel"],
+.join select {
+    width: 100%;
+    min-height: 45px;
+}
+
+.join input[type="submit"] {
+    padding: 1rem;
+    border: none;
+    box-shadow: 1px 1px 4px #999;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    width: 50%;
 }
 
 /*********** VIEW BUTTONS ***********/
