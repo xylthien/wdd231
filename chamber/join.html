@@ -14,6 +14,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
     <meta property="og:title" content="Sandy Chamber of Commerce Sign Up Page">
     <meta property="og:description" content="Directory of the members of Sandy, Utah's Chamber of Commerce">
@@ -130,28 +131,28 @@
                     <h3>Gold Membership</h3>
                     <p class="price">$100/month</p>
                     <p>Premium business exposure and exclusive chamber benefits.</p>
-                    <button type="button">View Benefits</button>
+                    <button type="button" id="gold-btn">View Benefits</button>
                 </div>
 
                 <div class="levels">
                     <h3>Silver Membership</h3>
                     <p class="price">$75/month</p>
                     <p>Enhanced directory visibility and networking opportunities.</p>
-                    <button type="button">View Benefits</button>
+                    <button type="button" id="silver-btn">View Benefits</button>
                 </div>
 
                 <div class="levels">
                     <h3>Bronze Membership</h3>
                     <p class="price">$50/month</p>
                     <p>Essential chamber membership and community connections.</p>
-                    <button type="button">View Benefits</button>
+                    <button type="button" id="bronze-btn">View Benefits</button>
                 </div>
 
                 <div class="levels">
                     <h3>Non-Profit Membership</h3>
                     <p class="price">Free</p>
                     <p>Support for local non-profits and community organizations</p>
-                    <button type="button">View Benefits</button>
+                    <button type="button" id="nonprofit-btn">View Benefits</button>
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
                 <li>Exclusive training workshops</li>
                 <li>Priority sponsorship opportunities</li>
             </ul>
-            <button type="button">Close</button>
+            <button type="button" class="close">Close</button>
         </dialog>
 
         <dialog id="silver-dialog" aria-labelledby="silver-heading">
@@ -177,7 +178,7 @@
                 <li>15% event discount</li>
                 <li>Training workshops</li>
             </ul>
-            <button type="button">Close</button>
+            <button type="button" class="close">Close</button>
         </dialog>
 
         <dialog id="bronze-dialog" aria-labelledby="bronze-heading">
@@ -187,17 +188,17 @@
                 <li>Public networking events</li>
                 <li>5% event discount</li>
             </ul>
-            <button type="button">Close</button>
+            <button type="button" class="close">Close</button>
         </dialog>
 
         <dialog id="nonprofit-dialog" aria-labelledby="nonprofit-heading">
-            <h2 id="nonprofit-heading">Non-Profit</h2>
+            <h2 id="nonprofit-heading">Non-Profit Membership Benefits</h2>
             <ul>
                 <li>Basic directory listing</li>
                 <li>Public networking events</li>
                 <li>Community initiative opportunities</li>
             </ul>
-            <button type="button">Close</button>
+            <button type="button" class="close">Close</button>
         </dialog>
     </main>
     <footer>
