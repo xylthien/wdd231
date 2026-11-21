@@ -14,6 +14,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 
     <meta property="og:title" content="Sandy Chamber of Commerce Directory">
     <meta property="og:description" content="Directory of the members of Sandy, Utah's Chamber of Commerce">
@@ -41,8 +42,24 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="thank-you">
         <h1>Thank You!</h1>
+        <section class="confirmation">
+            <h2>Application Received</h2>
+            <p>Your membership application has been successfully submitted.
+                We appreciate your interest in the Sandy Chamber of Commerce!
+            </p>
+        </section>
+        <section class="application-details">
+            <h2>Application Details</h2>
+            <p>First Name: <span id="first-name"></span></p>
+            <p>Last Name: <span id="last-name"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Phone Number: <span id="phone"></span></p>
+            <p>Organzation: <span id="organization"></span></p>
+            <p class="submission-date">Submitted: <span id="timestamp"></span></p>
+        </section>
+        
     </main>
     <footer>
         <div class="footer-content">

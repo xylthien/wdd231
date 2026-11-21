@@ -372,6 +372,33 @@ dialog > button {
     margin: 0 auto;
 }
 
+/*********** THANK YOU PAGE ***********/
+
+.thank-you > section {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    background-color: var(--card-background);
+}
+
+.application-details p {
+    line-height: 1.6;
+    margin: 0.75rem 0;
+}
+
+.application-details p span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.submission-date {
+    font-size: 0.85rem;
+    color: #666;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.75rem;
+}
+
 /*********** VIEW BUTTONS ***********/
 
 .view-buttons {
