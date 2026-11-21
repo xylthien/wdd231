@@ -399,6 +399,11 @@ dialog > button {
     padding-top: 0.75rem;
 }
 
+.submission-date span {
+    font-weight: 400;
+    color: inherit;
+}
+
 /*********** VIEW BUTTONS ***********/
 
 .view-buttons {
