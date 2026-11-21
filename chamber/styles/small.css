@@ -299,6 +299,28 @@ main > section {
     --order: 3;
 }
 
+.levels > button,
+dialog > button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.levels > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px #999;
+}
+
+.levels > button::after {
+    content: " ✦";
+    color: var(--secondary-color);
+}
+
 /*********** FORM ***********/
 
 .join {
@@ -319,9 +341,9 @@ main > section {
     color: gray;
 }
 
-.join label:has(+ input[required])::after,
-.join label:has(+ select[required])::after,
-.join label:has(+ textarea[required])::after { /* Thank you Google! */
+.join label:has(input[required]) span::after,
+.join label:has(select[required]) span::after,
+.join label:has(textarea[required]) span::after { /* Thank you Google! */
     content: " *";
     color: red;
     font-weight: bold;
@@ -337,7 +359,7 @@ main > section {
     padding-left: 10px;
 }
 
-.join input[type="submit"] {
+.join button[type="submit"] {
     padding: 1rem;
     border: none;
     box-shadow: 1px 1px 4px #999;
@@ -345,6 +367,9 @@ main > section {
     color: white;
     font-weight: bold;
     width: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 /*********** VIEW BUTTONS ***********/
