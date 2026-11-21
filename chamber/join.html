@@ -47,27 +47,59 @@
             <form class="join" method="get" action="thankyou.html">
                 <div>
                     <label for="firstName">First Name</label>
-                    <input name="firstName" id="firstName" type="text" autocomplete="given-name" required>
+                    <input 
+                    name="firstName" 
+                    id="firstName" 
+                    type="text" 
+                    autocomplete="given-name" 
+                    required>
                 </div>
                 <div>
                     <label for="lastName">Last Name</label>
-                    <input name="lastName" id="lastName" type="text" autocomplete="family-name" required>
+                    <input 
+                    name="lastName" 
+                    id="lastName" 
+                    type="text" 
+                    autocomplete="family-name" 
+                    required>
                 </div>
                 <div>
-                    <label for="title">Organizational Title</label>
-                    <input name="title" id="title" type="text" required>
+                    <label for="orgTitle">Organizational Title</label>
+                    <input 
+                    name="orgTitle" 
+                    id="orgTitle" 
+                    type="text" 
+                    pattern="[A-Za-z -]{7,}"
+                    required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input name="email" id="email" type="text" autocomplete="email" placeholder="you@example.org" required>
+                    <input 
+                    name="email" 
+                    id="email" 
+                    type="email" 
+                    autocomplete="email" 
+                    placeholder="you@example.org" 
+                    required>
                 </div>
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input name="phone" id="phone" type="tel" autocomplete="tel" placeholder="555-123-4567" pattern="[0-9+\-\s()]*" required>
+                    <input 
+                    name="phone" 
+                    id="phone" 
+                    type="tel" 
+                    autocomplete="tel" 
+                    placeholder="555-123-4567" 
+                    pattern="[0-9+\-\s()]+" 
+                    required>
                 </div>
                 <div>
                     <label for="organization">Organization Name</label>
-                    <input name="organization" id="organization" type="text" required>
+                    <input 
+                    name="organization" 
+                    id="organization" 
+                    type="text" 
+                    required>
                 </div>
                 <div>
                     <label for="membershipLevel">Membership Level</label>
@@ -79,32 +111,94 @@
                         <option value="NP">Non-Profit</option>
                     </select>
                 </div>
+                <div>
+                    <label for="orgDescription">Organization Description</label>
+                    <textarea 
+                    name="orgDescription" 
+                    id="orgDescription" 
+                    required 
+                    placeholder="Please tell us about your organization"
+                    rows="6"
+                    minlength="20"
+                    maxlength="500"></textarea>
+                </div>
 
                 <input type="submit" value="Complete Application">
             </form>
             <div id="membership">
                 <div class="levels">
-                    <h3>Gold</h3>
+                    <h3>Gold Membership</h3>
                     <p class="price">$100/month</p>
-                    <p></p>
+                    <p>Premium business exposure and exclusive chamber benefits.</p>
+                    <button type="button">View Benefits</button>
                 </div>
+
                 <div class="levels">
-                    <h3>Silver</h3>
+                    <h3>Silver Membership</h3>
                     <p class="price">$75/month</p>
-                    <p></p>
+                    <p>Enhanced directory visibility and networking opportunities.</p>
+                    <button type="button">View Benefits</button>
                 </div>
+
                 <div class="levels">
-                    <h3>Bronze</h3>
+                    <h3>Bronze Membership</h3>
                     <p class="price">$50/month</p>
-                    <p></p>
+                    <p>Essential chamber membership and community connections.</p>
+                    <button type="button">View Benefits</button>
                 </div>
+
                 <div class="levels">
-                    <h3>Non-Profit</h3>
+                    <h3>Non-Profit Membership</h3>
                     <p class="price">Free</p>
-                    <p></p>
+                    <p>Support for local non-profits and community organizations</p>
+                    <button type="button">View Benefits</button>
                 </div>
             </div>
         </div>
+
+        <dialog id="gold-dialog" aria-labelledby="gold-heading">
+            <h2 id="gold-heading">Gold Membership Benefits</h2>
+            <ul>
+                <li>Premium homepage business spotlight</li>
+                <li>Priority business directory placement</li>
+                <li>Free networking events</li>
+                <li>25% discount on chamber events</li>
+                <li>Exclusive training workshops</li>
+                <li>Priority sponsorship opportunities</li>
+            </ul>
+            <button type="button">Close</button>
+        </dialog>
+
+        <dialog id="silver-dialog" aria-labelledby="silver-heading">
+            <h2 id="silver-heading">Silver Membership Benefits</h2>
+            <ul>
+                <li>Enhanced directory listing</li>
+                <li>Free networking events</li>
+                <li>15% event discount</li>
+                <li>Training workshops</li>
+            </ul>
+            <button type="button">Close</button>
+        </dialog>
+
+        <dialog id="bronze-dialog" aria-labelledby="bronze-heading">
+            <h2 id="bronze-heading">Bronze Membership Benefits</h2>
+            <ul>
+                <li>Standard directory listing</li>
+                <li>Public networking events</li>
+                <li>5% event discount</li>
+            </ul>
+            <button type="button">Close</button>
+        </dialog>
+
+        <dialog id="nonprofit-dialog" aria-labelledby="nonprofit-heading">
+            <h2 id="nonprofit-heading">Non-Profit</h2>
+            <ul>
+                <li>Basic directory listing</li>
+                <li>Public networking events</li>
+                <li>Community initiative opportunities</li>
+            </ul>
+            <button type="button">Close</button>
+        </dialog>
     </main>
     <footer>
         <div class="footer-content">

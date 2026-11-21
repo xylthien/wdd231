@@ -276,16 +276,13 @@ main > section {
     margin-bottom: 0.25rem;
 }
 
-.join input {
-    padding-left: 10px;
-}
-
-.join input[value] {
+.join input[placeholder] {
     color: gray;
 }
 
 .join label:has(+ input[required])::after,
-.join label:has(+ select[required])::after { /* Thank you Google! */
+.join label:has(+ select[required])::after,
+.join label:has(+ textarea[required])::after { /* Thank you Google! */
     content: " *";
     color: red;
     font-weight: bold;
@@ -293,9 +290,12 @@ main > section {
 
 .join input[type="text"],
 .join input[type="tel"],
+.join input[type="email"],
+.join textarea,
 .join select {
     width: 100%;
     min-height: 45px;
+    padding-left: 10px;
 }
 
 .join input[type="submit"] {
