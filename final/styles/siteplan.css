@@ -1,0 +1,163 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #263D35; /* Header, Navigation, and Headings */
+    --background-color: #F4EFE5; /* Main background */
+    --surface-color: #E8D5B5; /* Sections, Cards, and Other surfaces */
+    --secondary-color: #B08D57; /* Decorative accents and Highlights */
+    --text-color: #2B2118; /* Body text */
+}
+
+.primary-swatch {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.background-swatch {
+    background-color: var(--background-color);
+}
+
+.surface-swatch {
+    background-color: var(--surface-color);
+}
+
+.secondary-swatch {
+    background-color: var(--secondary-color);
+}
+
+.text-swatch {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.color-swatch {
+    text-align: center;
+    font-weight: 600;
+}
+
+/*********** BODY ***********/
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Cinzel', serif;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*********** HEADER ***********/
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/*********** MAIN ***********/
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/*********** SECTION ***********/
+section {
+    background-color: var(--surface-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+/*********** LISTS ***********/
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/*********** TABLE ***********/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid var(--primary-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+#typography-table tbody tr:first-child td:first-child {
+    font-family: 'Cinzel', serif;
+}
+
+#typography-table tbody tr:last-child td:first-child {
+    font-family: 'Lora', serif;
+}
+
+/*********** WIREFRAMES ***********/
+
+#wireframes img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+/*********** FOOTER ***********/
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
